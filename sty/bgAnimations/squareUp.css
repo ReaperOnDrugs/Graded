@@ -1,0 +1,21 @@
+.bgSquare {
+    position: absolute;
+    pointer-events: none;
+    animation: flowUp 5s linear infinite;
+}
+@keyframes flowUp {
+    0% {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}

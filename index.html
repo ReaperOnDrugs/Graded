@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Testing site for a wip app">
+        <meta name="author" content="Noid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Graded </title>
+
+        <link rel="stylesheet" href="sty/css/mainIndex.css">
+        <link rel="stylesheet" href="sty/bgAnimations/squareUp.css">
+        <link rel="stylesheet" href="sty/bgAnimations/fallingLeaves.css">
+    </head>
+    <body onclick="changebg()">
+        <div id="backgroundElements">
+            <section id="section"></section>
+            <script>
+                var check = localStorage.getItem("bg");
+
+                var scp = document.createElement('script');
+                if (check == 1){
+                    scp.setAttribute("src", "sty/bgAnimations/squareUp.js");
+                }
+                else {
+                    scp.setAttribute("src", "sty/bgAnimations/fallingLeaves.js");
+                }
+                document.getElementById("backgroundElements").appendChild(scp);
+
+                function changebg(){
+                    var check = localStorage.getItem("bg");
+
+                    var scp = document.createElement('script');
+                    if (check == 1){
+                        localStorage.setItem("bg", 2);
+                    }
+                    else {
+                        localStorage.setItem("bg", 1);
+                    }
+                    location.reload();
+            }
+            </script>
+        </div>
+    </body>
+</html>
