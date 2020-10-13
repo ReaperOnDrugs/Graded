@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Testing site for a wip app">
-        <meta name="author" content="Noid">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Testing site for a wip app"/>
+        <meta name="author" content="Noid"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <title> Graded </title>
 
-        <link rel="stylesheet" href="sty/css/mainIndex.css">
-        <link rel="stylesheet" href="sty/bgAnimations/squareUp.css">
-        <link rel="stylesheet" href="sty/bgAnimations/fallingLeaves.css">
+        <link rel="stylesheet" href="sty/css/mainIndex.css"/>
+        <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css"/>
+        <link rel="stylesheet" href="sty/css/navBar.css"/>
+        <link rel="stylesheet" href="sty/bgAnimations/squareUp.css"/>
     </head>
-    <body onclick="changebg()">
+    <body>
         <div id="backgroundElements">
             <section id="section"></section>
-            <script>
-                var check = localStorage.getItem("bg");
+            <script src="sty/bgAnimations/squareUp.js"></script>
+        </div>
 
-                var scp = document.createElement('script');
-                if (check == 1){
-                    scp.setAttribute("src", "sty/bgAnimations/squareUp.js");
-                }
-                else {
-                    scp.setAttribute("src", "sty/bgAnimations/fallingLeaves.js");
-                }
-                document.getElementById("backgroundElements").appendChild(scp);
+        <div id="ContentContainer">
+            <div id="navContainer">
+                <div id="navBar">
+                    <div id="btn1"></div>
+                    <div id="btn2"></div>
+                    <div id="btn3"></div>
+                    <div id="btn4"><i class="fas fa-chart-line"></i></div>
+                    <div id="btn5"></div>
+                </div>
+            </div>
 
-                function changebg(){
-                    var check = localStorage.getItem("bg");
+            <div id="blockContent">
 
-                    var scp = document.createElement('script');
-                    if (check == 1){
-                        localStorage.setItem("bg", 2);
-                    }
-                    else {
-                        localStorage.setItem("bg", 1);
-                    }
-                    location.reload();
-            }
-            </script>
+            </div>
         </div>
     </body>
 </html>

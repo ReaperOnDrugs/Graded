@@ -1,0 +1,13 @@
+#navBar {
+    height: 100%;
+    width: 60%;
+    margin-left: 20%;
+    background-color: crimson;
+}
+#navBar div {
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: darkseagreen;
+    font-size: 6vw;
+}
