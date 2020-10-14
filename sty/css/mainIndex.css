@@ -31,14 +31,14 @@ body {
                 3px 4px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-#gradesDIV {
+#gradesDIV, #classesDIV {
     width: 100%;
     height: 70vh;
     margin-top: 5vh;
     overflow-y: scroll;
     scrollbar-width: none;
 }
-#gradesDIV::-webkit-scrollbar {
+#gradesDIV::-webkit-scrollbar, #classesDIV::-webkit-scrollbar {
     display: none;
   }
 .shClass {
@@ -105,4 +105,8 @@ body {
 .grades i {
     color: rgb(64, 161, 240);
     text-shadow: 0 0 15px rgb(64, 161, 240);
+}
+
+#classesDIV {
+    display: none;
 }
