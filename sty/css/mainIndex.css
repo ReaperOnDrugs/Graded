@@ -25,7 +25,7 @@ body {
     height: 80vh;
     margin-top: 5vh;
     margin-left: 10vw;
-    background-color: rgb(23, 16, 32);
+    background-color: rgb(28, 21, 37);
     border-radius: 15px;
     box-shadow: -3px -2px 3px rgba(255, 255, 255, 0.07),
                 3px 4px 3px 3px rgba(0, 0, 0, 0.4);
@@ -47,24 +47,62 @@ body {
     height: 10vh;
     margin-left: 10vw;
     margin-top: 5vh;
-    background-color: blue;
+    background-color: rgb(28, 21, 37);
     border-radius: 15px;
+    box-shadow: -3px -2px 3px rgba(255, 255, 255, 0.07),
+                3px 4px 3px 3px rgba(0, 0, 0, 0.4);
 }
 .cName, .avg, .grades {
     float: left;
 }
 .cName {
     height: 10vh;
-    width: 20vw;
-    background-color: cadetblue;
+    width: 25vw;
+    font-size: 8vh;
+    text-align: right;
+    padding-right: 1vw;
+    color: rgb(64, 161, 240);
+    text-shadow: 0 0 15px rgb(64, 161, 240);
 }
 .grades {
     height: 10vh;
-    width: 30vw;
-    background-color: crimson;
+    width: 25vw;
+    font-size: 7vh;
 }
 .avg {
-    height: 10vh;
-    width: 10vh;
-    background-color: darkgreen;
+    height: 8vh;
+    width: 8vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    border-radius: 15px;
+    border: 0.4vh solid  rgb(64, 161, 240);
+    background-color: rgb(28, 21, 37);
+    box-shadow: 0 0 15px rgb(64, 161, 240);
+    color: rgb(64, 161, 240);
+    text-shadow: 0 0 5px rgb(64, 161, 240);
+    font-size: 4vh;
+    text-align: center;
+    line-height: 7vh;
+    vertical-align: middle;
+}
+.grades input {
+    font-size: 8vh;
+    float: right;
+    display: block;
+    width: 80%;
+    height: 8vh;
+    margin-top: 1vh;
+    margin-right: 10%;
+    border-radius: 15px;
+    border: 0.4vh solid  rgb(64, 161, 240);
+    background-color: rgb(28, 21, 37);
+    box-shadow: 0 0 15px rgb(64, 161, 240);
+    color: rgb(64, 161, 240);
+    text-shadow: 0 0 5px rgb(64, 161, 240);
+    padding-left: 1vh;
+    outline: none;
+}
+.grades i {
+    color: rgb(64, 161, 240);
+    text-shadow: 0 0 15px rgb(64, 161, 240);
 }
